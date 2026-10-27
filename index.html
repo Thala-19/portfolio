@@ -188,7 +188,6 @@
   .form-foot{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:2px}
   .cf-hint{font-size:.82rem;color:#8FB4AF}
   .cf-hint.err{color:var(--amber)}
-  .cold-actions{display:flex;flex-direction:column;gap:10px;min-width:200px}
   .btn{
     font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1rem;
     border-radius:999px;padding:12px 26px;text-align:center;cursor:pointer;
@@ -614,6 +613,7 @@
       form.addEventListener('submit',function(e){
         e.preventDefault();
         var name=nameEl.value.trim(),email=mailEl.value.trim(),msg=msgEl.value.trim();
+        msg=msg.replace(/^hi thala[,!.\s]*/i,'');
         if(!msg){
           hint.textContent='Add a little message first — even one sentence works.';
           hint.className='cf-hint err';
