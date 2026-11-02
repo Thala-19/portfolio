@@ -114,10 +114,16 @@
     border-radius:12px;border:1px solid var(--line);background:var(--surface);
     box-shadow:0 14px 34px -24px rgba(14,50,56,.5);
   }
+  .hero-top{display:flex;align-items:flex-start;gap:40px}
+  .hero-copy{min-width:0;flex:1}
   .portrait{
-    display:block;width:min(210px,25%);height:auto;
-    border-radius:18px;margin-top:16px;margin-bottom:26px;
+    display:block;width:200px;height:auto;flex:0 0 200px;align-self:center;
+    border-radius:18px;
     box-shadow:0 0 0 1px rgba(91,191,182,.35),0 18px 40px -18px rgba(0,0,0,.55);
+  }
+  @media (max-width:640px){
+    .hero-top{flex-direction:column;gap:22px}
+    .portrait{width:min(180px,52%);flex:none;align-self:flex-start;order:-1}
   }
   .project:nth-child(even) .desc{order:-1}
   .project:nth-child(even){grid-template-columns:minmax(0,4fr) minmax(0,7fr)}
@@ -248,18 +254,22 @@
   <!-- ============ HERO ============ -->
   <div class="hero">
     <div class="wrap">
-      <img class="portrait" src="self-image.jpg" alt="Portrait of Meyathala Razditya" width="800" height="800">
-      <h1>Meyathala&nbsp;Razditya</h1>
-      <p class="lede">
-        I build <strong>AI tools for learning, focus, and accessibility</strong> ,as well as leading youth programs
-        that put that same energy into people, not just software. Studying Artificial Intelligence at BINUS University,
-        currently measuring and mending exchange data for <strong>AIESEC in Poland</strong> from Jakarta.
-      </p>
-      <p class="now">
-        <span>Now · <b>Data Manager, AIESEC in Poland</b></span>
-        <span>Where · <b>West Jakarta, Indonesia</b></span>
-        <span>Portfolio · <b>Visora, Thala's Playground, IR Tracker, ProveIt</b></span>
-      </p>
+      <div class="hero-top">
+        <div class="hero-copy">
+          <h1>Meyathala&nbsp;Razditya</h1>
+          <p class="lede">
+            I build <strong>AI tools for learning, focus, and accessibility</strong> ,as well as leading youth programs
+            that put that same energy into people, not just software. Studying Artificial Intelligence at BINUS University,
+            currently measuring and mending exchange data for <strong>AIESEC in Poland</strong> from Jakarta.
+          </p>
+          <p class="now">
+            <span>Now · <b>Data Manager, AIESEC in Poland</b></span>
+            <span>Where · <b>West Jakarta, Indonesia</b></span>
+            <span>Portfolio · <b>Visora, Thala's Playground, IR Tracker, ProveIt</b></span>
+          </p>
+        </div>
+        <img class="portrait" src="self-image.jpg" alt="Portrait of Meyathala Razditya" width="800" height="800">
+      </div>
       <div class="fact-strip" role="list" aria-label="Highlights">
         <div class="fact" role="listitem"><div class="n">4</div><div class="l">continents covered by my international-relations team</div></div>
         <div class="fact" role="listitem"><div class="n">50+</div><div class="l">AIESEC local chapters in my partner portfolio</div></div>
