@@ -108,6 +108,17 @@
     border:1px solid var(--line);background:var(--surface);
     padding:4px 12px;border-radius:999px;
   }
+  .shot{margin:0 0 16px}
+  .shot img{
+    width:100%;height:auto;display:block;
+    border-radius:12px;border:1px solid var(--line);background:var(--surface);
+    box-shadow:0 14px 34px -24px rgba(14,50,56,.5);
+  }
+  .portrait{
+    display:block;width:min(210px,25%);height:auto;
+    border-radius:18px;margin-top:16px;margin-bottom:26px;
+    box-shadow:0 0 0 1px rgba(91,191,182,.35),0 18px 40px -18px rgba(0,0,0,.55);
+  }
   .project:nth-child(even) .desc{order:-1}
   .project:nth-child(even){grid-template-columns:minmax(0,4fr) minmax(0,7fr)}
 
@@ -237,7 +248,7 @@
   <!-- ============ HERO ============ -->
   <div class="hero">
     <div class="wrap">
-      <img src="self-image.jpg" alt="Description of the image" style="max-width: 25%; border-radius: var(--radius); margin-top: 16px;">
+      <img class="portrait" src="self-image.jpg" alt="Portrait of Meyathala Razditya" width="800" height="800">
       <h1>Meyathala&nbsp;Razditya</h1>
       <p class="lede">
         I build <strong>AI tools for learning, focus, and accessibility</strong> ,as well as leading youth programs
@@ -287,6 +298,7 @@
           </div>
         </div>
         <aside>
+          <figure class="shot"><img src="Visora.jpg" alt="Visora prototype: a voice test interface and the VISORA pipeline, wired from speech recognition through Gemini to text-to-speech" loading="lazy"></figure>
           <div class="dt">What it does</div>
           <p class="dd">Listens, understands, and speaks back in one continuous flow — an accessibility-first AI companion.</p>
           <div class="tags">
@@ -315,6 +327,7 @@
           </div>
         </div>
         <aside>
+          <figure class="shot"><img src="Thalas_Playground.jpg" alt="Thala's Playground dashboard: daily score counter, score-rhythm chart, upcoming events and projects overview" loading="lazy"></figure>
           <div class="dt">Built with</div>
           <p class="dd">React and TypeScript, with local persistence so nothing ever gets lost.</p>
           <div class="tags">
@@ -343,6 +356,7 @@
           </div>
         </div>
         <aside>
+          <figure class="shot"><img src="IR_Tracker.jpg" alt="IR Tracker: a local-committee directory in Google Sheets that drives automated WhatsApp outreach and calendar follow-ups" loading="lazy"></figure>
           <div class="dt">Why it matters</div>
           <p class="dd">A global business-development team of 3 covering 4 continents runs on it.</p>
           <div class="tags">
@@ -368,6 +382,7 @@
           </div>
         </div>
         <aside>
+          <figure class="shot"><img src="ProveIt.jpg" alt="ProveIt in Google Docs: highlighted text analyzed by the Citation Search sidebar, listing related academic papers" loading="lazy"></figure>
           <div class="dt">Built with</div>
           <p class="dd">A Google Docs extension wired to two research APIs and a carefully prompted Gemini model.</p>
           <div class="tags">
