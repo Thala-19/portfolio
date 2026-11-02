@@ -7,7 +7,7 @@ Personal portfolio combining my CV and project portfolio: AI tools for learning,
 - **Visora** — AI live assistant for the visually impaired (voice-to-voice pipeline)
 - **Thala's Playground** — React + TypeScript productivity workspace with 20-minute time blocks
 - **IR Tracker** — AIESEC local-committee directory with automated Google Calendar outreach
-- **Prove It** — AI citation assistant for Google Docs (Gemini API + OpenAlex)
+- **ProveIt** — AI citation assistant for Google Docs (Gemini API + OpenAlex)
 
 ## Run locally
 
